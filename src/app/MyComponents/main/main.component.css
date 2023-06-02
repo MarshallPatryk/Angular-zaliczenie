@@ -1,0 +1,39 @@
+.myNav {
+  font-size: xx-large;
+}
+.toolbar {
+  height: 60px;
+  /* background-color: rgb(30, 13, 217); */
+}
+.sidecontainer {
+  min-height: 800px !important;
+}
+a {
+  text-decoration: none;
+  font-size: large;
+  white-space: normal;
+}
+.mat-sidenav-content {
+  margin: 50px;
+  text-align: center;
+}
+.mat-sidenav {
+  background-color: rgb(38, 38, 49);
+}
+.sidenav {
+  margin: 20px;
+  height: 200px;
+}
+.spacer {
+  flex: 1 1 auto;
+}
+.jumbotron {
+  text-align: center;
+  min-height: 200px;
+}
+.fontStyle {
+  font-size: 40px;
+  color: rgb(236, 236, 242);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-shadow: 2px 2px rgb(215, 133, 26);
+}

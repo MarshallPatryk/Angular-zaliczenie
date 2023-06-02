@@ -1,0 +1,14 @@
+.my-form {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.my-form-field {
+  width: 100%;
+  margin-bottom: 15px;
+  margin-top: 20px;
+}
+
+.my-form-field--invalid {
+  border-color: red;
+}

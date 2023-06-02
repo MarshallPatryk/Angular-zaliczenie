@@ -1,0 +1,36 @@
+<div>
+  <mat-toolbar class="toolbar" color="primary">
+    <div fxShow="true" fxHide.gt-sm="true">
+      <button mat-icon-button (click)="sidenav.toggle()">
+        <mat-icon>menu</mat-icon>
+      </button>
+    </div>
+    <a mat-button class="myNav"><span>Patryk M. 40580</span></a>
+    <span class="spacer"></span>
+    <div fxShow="true" fxHide.lt-md="true">
+      <a mat-button routerLink="">Home</a>
+      <a mat-button routerLink="form">Form</a>
+      <a mat-button routerLink="characters">Characters</a>
+      <a mat-button routerLink="parent">Parent-Child</a>
+    </div>
+  </mat-toolbar>
+  <mat-sidenav-container fxFlexFill class="sidecontainer">
+    <mat-sidenav
+      #sidenav
+      fxLayout="column"
+      mode="side"
+      opened="false"
+      fxHide.gt-sm="true"
+    >
+      <div class="sidenav" fxLayout="column">
+        <a mat-button routerLink="">Home</a>
+        <a mat-button routerLink="form">Form</a>
+        <a mat-button routerLink="characters">Characters</a>
+        <a mat-button routerLink="parent">Parent-Child</a>
+      </div>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>

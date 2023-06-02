@@ -1,0 +1,11 @@
+<div class="character-container">
+  <div class="character-card" *ngFor="let character of characters">
+    <h2 *ngIf="character.name">{{ character.name }}</h2>
+    <p *ngIf="character.species">Species: {{ character.species }}</p>
+    <p *ngIf="character.house">House: {{ character.house }}</p>
+    <p *ngIf="character.ancestry">Ancestry: {{ character.ancestry }}</p>
+    <p *ngIf="character.patronus">Patronus: {{ character.patronus }}</p>
+    <p *ngIf="character.dateOfBirth">Date of birth: {{ character.dateOfBirth }}</p>
+    <img *ngIf="character.image" width="100" [src]="character.image" alt="Character Image">
+  </div>
+</div>
